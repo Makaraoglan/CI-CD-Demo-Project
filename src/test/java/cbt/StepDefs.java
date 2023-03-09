@@ -42,7 +42,7 @@ public class StepDefs {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("search"));
     }
 
-    @After
+    //@After
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
             final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
